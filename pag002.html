@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>CSS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS3</h1>
+        <p>Cascading style sheets</p>
+    </header>
+
+    <nav>
+        <a href="index.html">HTML5</a>
+        <a href="pag002.html">CSS3</a>
+        <a href="pag003.html">JavaScript</a>
+    </nav>
+   
+    <main>
+        <h2>Estilos internos</h2>
+        <p>Apartir daqui iremos começar a aprender sobre CSS.
+        </p>
+        <p>Para se modificar os estilos de cada tag fazemos modificações no HEAD do código usando a tag STYLE e aplicando nos devidos marcadores como BODY,H1,COLOR(PARA MUDAR A COR DO TEXTO) E ETC.</p>
+        
+        <h2>Estilos externos</h2>
+        <p>Essa técnica consiste em você criar todo esse código de css em um arquivo separado que irá ser aplicado em todas as páginas, para isso basta usar a tag LINK CSS para criar um link e usar o atalho CTRL+CLIK para criar o arquivo CSS com o nome que você preferir.</p>
+        <p><strong>Atenção:</strong>para que a página seja dormatada de acordo com a configuração ela deve estar lincada com o arquivo CSS.</p>
+        
+        <h2>Cores em CSS</h2>
+        <p>A pricipal forma de se trabalhar com cores é usando a tag style como ja vimos e os seletores background color e color.</p>
+        <p>Existe a opção de escolher cores pre determinadas pelo vscode, mas isso é limitado.</p>
+        <p>Você pode escolher a cor usando código exadecimal ou rgb passando maouse em cima da cor e alterando.</p>
+        <p>Podendo também alterar a transparência como no exemplo do h2 desse assunto.</p>
+        
+        <h2>Gradientes</h2>
+        <p>Nós conseguimos trabalhar com gradientes dentro do vscode.</p>
+        <p>Para isso utilizamos a tag <strong>background-image</strong>, com ela selecionada devemos definir a direção do grandiente ex: to right para a direira, e depois definir as cores, podemos utilizar quantas cores quisermos. </p>
+        <p>Podemos também definir a porcentagem de cada cor no gradiente, para isso ao lado da cor escreva a porcentagem.</p>
+        <p>Podemos também definir o ângulo do gradinete colocando em vez de to right colocar 45deg por exemplo.</p>
+        <p>Outa opção é usar a configuração <strong>transparent</strong> após a 1º cor, dessa forma ele criará um gradiente até a transparência.</p>
+        
+        <h2>Algumas formatações para css</h2>
+        
+        <h3>Para colocar todo o texto dentro de uma caixa</h3>
+        <p>Para isso se utiliza a tag main e no css dentro do seletor utiliza a tag background-color ai é só selecionar a cor.</p>
+        
+        <h3>para centralizar esse quadrado na tela.</h3>
+        <p>para isso se utiliza a tag margin auto, dessa forma a caix aserá centralizada.</p>
+        
+        <h3>Para deixa o texto mais afastado da borda da caixa.</h3>
+        <p>Para isso se utiliza a tag padding e coloca a medida em px</p>
+        
+        <h3>Para aredondar as pontas do quadrado.</h3>
+        <p>Para isso se usa a tag border-radius e definir em px o tamanho da curvatura.</p>
+        
+        <h3>Para se colocar uma sobra dessa caixa.</h3>
+        <p>Para isso se usa a tag box-shadow e se usa 3 parâmetros de medição e por fim se define a cor.</p>
+        
+        <h3>Para criar um espaço no início do parágrafo.</h3>
+        <p>Se usa a tag <strong>text-indendet</strong> e se define o tamanho em ox do espaço.</p>
+        
+        <h2>Fontes</h2>
+        <p>Para modificar a fonte do site é muito simples, precisa apenas usar a tag font-family em seu css e escolher uma das sugeridas pelos vscode, pois são as chamadas safe fontes ou seja, combinações de fonte que funcionam em qualquer dispositivo.</p>
+        
+        <h2>Medidas de fontes</h2>
+        <p>As duas medidas recomendadas para formatar fonte as medidas:</p>
+        <ul type="disc">
+            <li>px
+                <ul type="disc"><li>Geralmente em o tamanho de 16 pontos.</li></ul>
+            </li>
+            <li>em
+                <ul type="disc">
+                    <li>1 em corresponde a 1px.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Peso e estilos da fonte </h2>
+        
+        <h3 style="font-weight:100;">Peso</h3>
+        <p>Para indicar o peso da fonte será usada a tag <strong>weigth</strong> como podemos ver no subtítulo.</p>
+        
+        <h3 style="font-style: italic;">Itálico</h3>
+        <p>Para o estilo se usa a tag <strong>fonte-style.</strong></p>
+        
+        <h3 style="text-decoration:underline;">Sublinado</h3>
+        <p>Para sublinahr um texto deve-se usar a tag <strong>text-decoration-underline</strong></p>
+        
+        <h3>Shorthand.</h3>
+        <p>Outra opção interessante é você usar um shorthand que consiste em fazer toda essa configuração em uma unica linha.
+        <p>Mas para isso deve seguir uma ordem específica usando a tag <strong>font</strong></p>
+        <ol>
+            <li>font-style</li>
+            <li>font-weigth</li>
+            <li>font-size</li>
+            <li>font-family</li>
+        </ol>
+        <p>Ex. <strong>font: italic bolder 3em arial, serif;</strong></p>
+        <p>Caso não queria uma das configurações como deixar em itálico não tem problema, pode deixar sem, o importante é manter a ordem.</p>,
+        
+        <h2>Fontes externas</h2>
+        
+        <h3 style="font-family: 'dancing script'; font-size: 28px;">Google fonts</h3>
+        <p>Para se usar o google fontes é muito simples depois de escolher a fonte que que utilizar copie o código de importe e na head do código HTML cole o importe.<br>Dessa for você poderá utilizar essa fonte no seu CSS.</p>
+        
+        <h3 style="font-family: 'love larry';">Download de fontes externas.</h3>
+        <p>Como essa fonte ridícula do subtítulo.</p>
+        <p>Para isso primeiro deve baixar o arquivo da fonte desejada, o site dafonte é o indicado, depois de baixar e extrair o arquivo coloque o mesmo dentro da pasta do código.</p>
+        <p>Dentro do head do código usa a regra @font-face, vai abrir o espaço para selecionar o arquivo.</p>
+        <p>Se possível use fonte com formato <strong>otf e ttf</strong>, são os formatos mais utilizado.</p>
+        <p>Se tiver os 2 formatos de cada fonte coloque os 2 arquivos no código e em cada um usa a tag format, abaixo está a lista do que colocar para cada formato.</p>
+        <p><ul>
+            <li>otf (opentype)</li>
+            <li>ttf (truetype)</li>
+        </ul></p>
+        
+        <h2>Alinhamento de fontes</h2>
+        <p>Para centralizar tag <strong>text-align-center</strong></p>
+        <p>Para direita tag <strong>text-align-right</strong></p>
+        <p>Para a esquerda <strong>text-aling-left</strong></p>
+        <p>Para da um espaçamento no começo de cada parágrafo usar a tag <strong>text-indent</strong>e definir o px.</p>
+        
+        <h2 id="idclass">Indentificadores e classes</h2>
+        
+        <h3 class="idclass">Indentificadores</h3>
+        <p>Para formatar 2 elemtnos de mesma tag é necessário usar indentificadores.<br>Isso irá diferenciar a tag que deseja formatar.<br>Para isso use a tag<strong>id</strong>e escolha o nome do seu indentificador</p>
+        <p>Já no seu arquivo CSS,utilize a # seguida do nome do indentificador que escolheu para formatar separadamente.</p>
+        <p>OBS: Não é certo usar vários ids em vários elementos mesmo que sejam para ter a mesma formatação, para isso se usar classes</p>
+        
+        <h3 class="idclass">Classes</h3>
+        <p>Para formatar vários elementos da mesma for nós criamos uma classe que é representada pela tag <strong>class.</strong><br>Já no CSS a classe é identificada como um .(ponto)</p>
+        
+        <h2>Pseudo classes</h2>
+        <p>Sempre constituido por um :</p>
+        <ul>
+            <li>Div</li>
+        </ul>
+        <p>div é um seletor onde podemos fazer algumas coisas, ainda não sei extamente porque ele ainda vai se aprofundar mais um coisa que aprendi que dá pra fazer é isso aqui.</p>
+        <p>Passe o mouse em sima dos quadrados.</p>
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <p>Para isso use a tag <strong>div</strong> nos elementos que deseja fazer essa formatação em seguida no css crie o seletor div e defina a formatação inicial</p>
+        <p>Depois crie um novo seletor <strong>div:hover</strong> com a formatação que deseja que aconteça quando passar o mouse em cima.</p>
+        <p>Para isso é um pouco mais complicado.<br>Primeiro você deve criar uma div no código HTML e dentro dele criar o parágrafo com o texto que deve ser escondido<br>Depois crie no CSS o seletor <strong>div > p </strong>(desse forma a formatação acontecerá em todo parágrafo que estiver dentro de uma div) e dentro escreve a regra <strong>display-none </strong>para que a frase suma.<br>Depois crie o seletor <strong>div:hover > p </strong>e dentro da seletor usa a regra <strong>display-block</strong> dessa forma sempre que passar o mouse por cima  frase será revelada.</p>
+        
+        <h3>Adicionais</h3>
+        <p>Para retirar o sublinado de um link e fazer com que aparece somente quando o mouse estiver em cima é simples<br>dentro do seletor em css "a" defina a regra <strong>text-decoration-none.</strong> isso fará com que o sublinado suma.
+        <p>Para que ele reapareça use o seletor <strong>a:hover</strong> e dentro dele defina a regra <strong>text-decoration-underline.</strong></p>
+        
+        <h2>Pseudo elementos</h2>
+        <p>Sempre constituido por ::</p>
+        
+        <h3>Recapitulando</h3>
+        <ul>
+            <li>Identificadores
+                <ul>
+                    <li>HTML=id e CSS=#</li>
+                </ul>
+            </li>
+            <li>Classes
+                <ul>
+                    <li>HTML=class e CSS=.</li>
+                </ul>
+            </li>
+            <li>Pseudoclasse
+                <ul>
+                    <li>CSS=:</li>
+                </ul>
+            </li>
+            <li>Pseudoelemento
+                <ul>
+                    <li>CSS=::</li>
+                </ul>
+            
+            </li>
+            <li>crildren
+                <ul>
+                    <li>CSS= ></li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Modelo de caixas</h2>
+        
+        <h3>Algumas formatações/Termos</h3>
+        <ul>
+            <li>Aninhamento (QUando existem caixas dentro de caixas)</li>
+            <li>width (Largura da caixa)</li>
+            <li>height (Altura da caixa.)</li>
+            <li>bolder (Linha traçada ao redor da caixa.)</li>
+            <li>padding (Afastamento interno da borda da caixa dos elementos de sentro)</li>
+            <li>Margin (Afastamento externo da borda da caixa de outras caixas)</li>
+            <li>Outline (Contorno da borda da caixa.)</li>
+            <li>line-height (Espaçamento entre linhas)</li>
+            </ul>
+        
+        <h3>Tipos de caixa.</h3>
+        
+            <li>Box-level: Sempre se inicia em uma nova linha.<br>Ex: tag DIV</li>
+            <li>Inline-level: Pode se iniciar na mesma linha.<br>Ex: Tag SPAN</li>
+            <P>Ou seja, box-level são elementos que sempre que usadas quebra a linha e se iniciam em uma nova linha.
+            <p>Já Inline-level são elementos que podem ser utilizados na mesma linha que a anterior e não precisam quebrar a linha.</p>
+            </P>
+        <p>Segue alguns exemplos de tags de cada tipo de box:</p>
+            <ul>
+                <li>Box-level
+                    <ul>
+                        <li>div</li>
+                        <li>h1 - h6</li>
+                        <li>p</li>
+                        <li>main</li>
+                        </ul>
+            
+                    </li>
+                    <li>Inline-level
+                        <ul>
+                            <li>span</li>
+                            <li>a</li>
+                            <li>code</li>
+                            <li>strong</li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+
+
+
+        </ul>
+        
+        <h3>Transformando box-level e inline level</h3>
+        <p>Você pode transformar um elemento box-level em inline-level</p>
+        
+        <ul>
+            <li>Box-level (display-block)</li>
+            <li>Inline-level (display-inline)</li>
+            <li>Para que tenha as 2 características (display-inline-block)</li>
+        </ul>
+        <h2>Algumas formatações da caixa.</h2>
+        
+        <h3>Borders</h3>
+        <ul>
+            <li>border-wight</li>
+            <li>border-style</li>
+            <li>bolder-color</li>
+            <li>border-radius</li>
+        </ul>
+        
+        <h3>Padding</h3>
+        <ul>
+            <li>paddind-top</li>
+            <li>paddind-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+        </ul>
+        
+        <h3>Margin</h3>
+        <ul>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+        </ul>
+        
+        <h3>Outline (Contorno)</h3>
+        <ul>
+            <li>outiline-wigth</li>
+            <li>outoline-style</li>
+            <li>outiline-color</li>
+        </ul>
+        
+        <h3>Shothands para margin e padding</h3>
+        <p>Você pode utilizar simplificações quando utilizar algumas dessas formatações, existem 3 tipos.</p>
+        
+        <h4>Mais de 3 medidas diferentes de cada lado:</h4>
+        <p>Nesse caso você deve usar a tag referente a formatação ex:margin e em sequência colocar a medida de cada lado seguindo a seguinte ordem.
+            <ol>
+                <li>Topo</li>
+                <li>Direita</li>
+                <li>Baixo</li>
+                <li>ESquerda</li>
+            </ol>
+        </p>
+        <p>Isso serve para qualquer uma dessas formatações listadas a cima.</p>
+        
+        <h4>Se for a mesma medida em todos os lados</h4>
+        <p>Nesse caso da mesma forma usa a tag da formatação que deseja fazer e coloque apenas uma medida, que será aolicada em todos os lados.<br>margin:10px;</p>
+        
+        <h4>Quando for 2 medidas para 2 lados.</h4>
+        <p>Nesse caso se coloca 2 medidas.</p>
+        <ol>
+            <li>Será referente a cima e baixo.</li>
+            <li>Será referente a direita e esquerda.</li>
+        </ol>
+        
+        <h4>Obervação</h4>
+        <p>Caso queira que as margens da direita e esquerda sejam centralizadas no shorthand entre as duas medidas respectivas coloque a regra <strong>auto.</strong></p>
+        
+        <h3>Horthands para border e Outline</h3>
+        <p>No caso desse tipo de formatação a sequência para o shorthand será:</p>
+        <ol>
+            <li>Wight</li>
+            <li>Style</li>
+            <li>Color</li>
+        </ol>
+        
+        <h2>Groping Tags</h2>
+        <p>São agrupadores de tags que auxilian na organização do site.<br>Segue abaixo alguns exemplos:</p>
+        <ul>
+            <li>Header = É o cabeçalho do site, onde ficam o título principal, os menus de navegação.</li>
+            <li>Main = Onde fica o conteúdo principal do sites, como textos, imagens, videos e etc.</li>
+            <li>Footer =  Onde fica o rodapé do site.</li>
+        </ul>
+
+        <h3>Outras Groping tags</h3>
+        <ul>
+            <li>nav = para menus de navegação.</li>
+            <li>Section = Seções dentro do main do site.</li>
+            <li>Article = Artigos do site.</li>
+            <li>Aside = é usada separar um assunto que não faz parte do assunto principal do site, como um extra por emxemplo.</li>
+        </ul>
+        
+        <h2>Sombras e Bordas</h2>
+        
+        <h3>Sombra</h3>
+        <p>Se usa ta <strong>borders-radiaus</strong> e com esa tag você pode configurar alguns parãmetros da sua sombra</p>
+        <ol>
+            <li>Horizontal</li>
+            <li>Vertical</li>
+            <li>Distância</li>
+            <li>Espalhamento</li>
+        </ol>
+        
+        <h3>Borders Radiaus</h3>
+        <p>Para se usar fazer essa formatação se usa a tag dorders-radiaus.</p>
+        <p>Os parâmetrps usados saão respectivamente:</p>
+        <ol>
+            <li>Areendondamentos da ponta esquedar cima</li>
+            <li>Areendondamentos da ponta direita cima</li>
+            <li>Areendondamentos da ponta direita baixo</li>
+            <li>Areendondamentos da ponta esquerda baixo</li>
+        </ol>
+        
+        <h3>Dica</h3>
+        <p>Use sempre o devtools dp navegador para auxiliar na criação de estilos das páginas.</p>
+
+        <h2>Variáveis</h2>
+        <p>É muito útil para voccê atribuir valores a cores, fontes e etc e poder utilizar esses valores de forma mais fácil</p>
+        <p>Você definiu uma paleta de cores para o seu site, em vez de em cada elemento você ir lá e digitar o código de cada cor você pode criar uma variável onde você pode determinar um nome.</p>
+        <p>Para isso se usa o seletor <strong>:root</strong> e dentro desse seletor se usa a regra <strong>--(nome da variável): valor da variável;</strong><br>Exemplo: --fonte-padrão: arial, verdana, Helvetica, sans-serif;</p>
+        <p>Dessa forma sempre que o texto for de fonte padrão você só precisa escrever <strong>font-family: var(fonte-padrão);</strong></p>
+        <p>Isso é muito útil para organização e alterações.</p>
+        
+        <h2>Seletor global</h2>
+        <p>O seletor global é usado para aplicar uma regra a todos os elementos compatíveis no código. como por exemplo definir uma fonte padrão para todo o texto.</p>
+        <p>Algo bem útil que se pode fazer com esse seletor é definir que todos os elementos tenha margem e padding 0px. Dessa forma fica mais fácil organizar.</p>
+        
+        <h2>Responsividade</h2>
+        
+        <h3>Responsividade de texto.</h3>
+        <p>Para tornar seu site responsivo em todos os dispositivos você deve reallizar algumas formatações na largura do site.
+        </p>
+        <p>Para isso basta usar as tags <strong>min-width: 320px;</strong> e <strong>max-width: 800;</strong><br>Dessa forma o conteúdo do site irá se adaptar a largura atual do dispositivo.
+        </p>
+
+        <h3>Responsividade de imagens.</h3>
+        <p>Para isso além da formatação que ja aprendemos usando <strong>picture e source midia type</strong> você também deve usar a configuração dentro do seletor img a seguinte formatação: <strong>Wight: 100%;</strong></p>
+        
+        <h3>Responsividade de videos</h3>
+        <p>Para isso é necessária uma configuração diferente, pois trabalharemos com o iframe disponibilzado pelo o youtube.
+        Será necessário que o iframe seja envelopado em uma div com uma class para fazer uma diferenciação.</p>
+        <p>Após isso crie 2 seletores.
+            <ul>
+                <li>1º div.video</li>
+                <li>2º div.video > iframe.</li>
+            </ul>
+        </p>
+        <p>Na 1º será feito todas as configurações de trás do video, como background-color e sua width e height.</p>
+        <p>Já na 2º será feito as configurações do video em sí como centralização.</p>
+        
+        <h4>centralização de um vídeo</h4>
+        <p>Para centralizar um video transforme ele em um bloco usando a tag display-block e depois use margin-auto para centralizar.</p>
+
+        <h2>Menu de navegação</h2>
+        <p>Você pode formatar o menu de navegação usando as configurações padrões como <strong>width, heith, margin e padding.</strong></p>
+        <p>Também pode usar a pseudo-classe :<strong>hover</strong> para fazer modificações quando o mouse passar em cima.</p>
+        <p>Ainda mais uma coisa que pode fazer é usa uma transição usando a tag <strong>transition-duration: 0.5s;</strong> para colocar um efeito de transição.</p>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+    
+
+    
+    
+</body>
+</html>

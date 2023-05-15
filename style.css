@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+@font-face {
+    font-family:'love larry';
+    src: url(fontes/love\ larry\ ttf.ttf) format('truetype') ;
+} 
+
+* {
+    text-align: justify;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01:#011627;
+    --cor02:#A4243B;
+    --cor03:#FFEDDF;
+
+    --fonte:'Montserrat','sans-serif';
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+header {
+    background-color: var(--cor02);
+    height: 100px;
+    
+}
+
+header h1 {
+    text-align: center;
+   padding-top: 25px;
+   font-family: var(--fonte);   
+}
+
+header p {
+    text-align: center;
+    font-family: var(--fonte);
+    font-weight: 700;
+    color:var(--cor03);
+}
+
+nav {
+    background-color: var(--cor03);
+    padding: 10px;
+    text-align: center;
+     
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor01);
+    font-weight: bold;
+    font-family:var(--fonte);
+    margin: 20px; 
+    padding: 10px; 
+
+}
+
+nav a:hover {
+    background-color: var(--cor02);
+    color:var(--cor03);
+    padding: 10px;
+    transition-duration: 0.5s;
+      
+}
+
+main {
+    background-color:var(--cor03);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+    
+
+}
+
+main h2 {
+    font-family: var(--fonte);
+    font-weight: bold;
+    margin: 15px 0px;
+    
+}
+
+main h3 {
+    font-family: var(--fonte);
+    font-weight: bold;
+    margin: 15px 0px;
+    color: var(--cor02);
+
+}
+
+main .h3img {
+    font-family: var(--fonte);
+    font-weight: bold;
+    margin: 15px 0px;
+    text-align: center;
+}
+
+main p {
+    font-family: var(--fonte);
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+main .h2 {
+    text-align: center;
+}
+
+main .p {
+    text-align: center;
+}
+
+main img {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+main iframe {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width:800px;
+    min-width: 300px;
+    height: 100%;
+    max-height: 500px;
+    min-height: 400px;
+}
+
+main video {
+    display: block;
+    margin: auto;
+    width: 43%;
+    max-width: 800px;
+    min-width: 400px;
+
+}
+
+div {
+    background-color:var(--cor02);
+    display: inline-block;
+    width: 20px;
+    padding: 20px;
+    color: white;
+    font-family: var(--fonte);
+}
+
+div:hover {
+    background-color:var(--cor01);
+    display: inline-block;
+    width: 20px;
+    padding: 20px;
+    color: white;
+    font-family: var(--fonte);
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor02);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
